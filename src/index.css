@@ -13,3 +13,7 @@ body {
 header {
   @apply bg-gradient-to-b from-[#3E1900] to-[#250F00];
 }
+
+.x-rule {
+  @apply border-0 bg-gradient-to-r from-transparent via-primary-ori to-transparent w-full h-px;
+}

@@ -1,4 +1,5 @@
 import "./HomeSection.css";
+import img1 from "../../assets/images/img-1.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faApple, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -6,7 +7,7 @@ import { faApple, faGoogle } from "@fortawesome/free-brands-svg-icons";
 function HomeSection() {
   return (
     <section className="mx-auto max-w-5xl h-screen">
-      <div className="flex flex-row items-center gap-24 h-full">
+      <div className="relative flex flex-row items-center gap-12 h-full">
         <div className="max-w-[700px]">
           <p className="mb-12 font-bold text-5xl">
             <span className="text-7xl text-primary-ori">X</span>ari puts the
@@ -24,7 +25,10 @@ function HomeSection() {
             </a>
           </div>
         </div>
-        <div>phone</div>
+        <div className="right-0 bottom-0 absolute">
+          <img className="w-80" src={img1} alt="" />
+        </div>
+        <hr className="bottom-0 absolute x-rule" />
       </div>
     </section>
   );
