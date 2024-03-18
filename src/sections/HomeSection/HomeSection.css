@@ -1,0 +1,3 @@
+.btn {
+  @apply flex flex-row justify-center items-center gap-2 hover:border-primary-ori/50 bg-primary-ori/10 px-3 p-2 border border-transparent rounded-full transition-all duration-500 ease-in-out;
+}
