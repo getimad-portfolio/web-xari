@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  @apply bg-[#250F00] text-white;
+}
+
+header {
+  @apply bg-gradient-to-b from-[#3E1900] to-[#250F00];
+}
