@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+import img2 from "../../assets/images/img-2.png";
+
 import {
   IconDefinition,
   faCube,
@@ -11,6 +14,11 @@ type CardProps = {
   title: string;
 };
 
+type ParagraphProps = {
+  title: string;
+  children: ReactNode;
+};
+
 function Card({ icon, title }: CardProps) {
   return (
     <div className="relative flex flex-col justify-center items-center gap-4 bg-primary-ori/10 rounded w-52 h-52">
@@ -21,10 +29,19 @@ function Card({ icon, title }: CardProps) {
   );
 }
 
+function Paragraph({ title, children }: ParagraphProps) {
+  return (
+    <div>
+      <h3 className="mb-2 font-bold text-2xl">{title}</h3>
+      <p className="text-primary-ori">{children}</p>
+    </div>
+  );
+}
+
 function AboutSection() {
   return (
     <section className="mx-auto py-36 max-w-5xl">
-      <article className="flex flex-col gap-16 text-center">
+      <article className="flex flex-col gap-16 mb-32 text-center">
         <h2 className="font-bold text-3xl">
           A one-stop shop for local retailers
         </h2>
@@ -41,6 +58,26 @@ function AboutSection() {
           <Card icon={faCube} title="+3 000 Products" />
           <Card icon={faUser} title="+100 000 Clients" />
         </div>
+      </article>
+      <article className="relative flex flex-row justify-between">
+        <div className="flex flex-col gap-9 max-w-[500px]">
+          <Paragraph title="A digital distribution channel">
+            Xari's app allows retailers to order a wide range of consumer goods
+            at competitive prices while benefiting from quick delivery.
+          </Paragraph>
+          <Paragraph title="Embedded financial services">
+            Within a few clicks, Xari's customers can benefit from financial
+            services like payments, micro-insurance...
+          </Paragraph>
+          <Paragraph title="A direct communication channel">
+            Thanks to its different digital tools, Xari established a direct
+            communication channel with traditional proximity stores.
+          </Paragraph>
+        </div>
+        <div>
+          <img className="w-80" src={img2} alt="" />
+        </div>
+        <hr className="right-0 bottom-0 absolute x-rule" />
       </article>
     </section>
   );
