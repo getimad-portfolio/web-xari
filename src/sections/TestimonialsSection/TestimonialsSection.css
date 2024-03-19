@@ -1,0 +1,17 @@
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  @apply text-primary-ori opacity-25 hover:opacity-100 transition duration-300;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  @apply text-primary-ori opacity-25 hover:opacity-100 transition duration-300;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-primary-ori opacity-25 hover:opacity-100 transition duration-300;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary-ori opacity-100;
+}
