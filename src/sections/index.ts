@@ -1,4 +1,5 @@
 import AboutSection from "./AboutSection/AboutSection";
+import ContactSection from "./ContactSection/ContactSection";
 import HomeSection from "./HomeSection/HomeSection";
 import NewsMediaSection from "./NewsMediaSection/NewsMediaSection";
 import PromoVideoSection from "./PromoVideoSection/PromoVideoSection";
@@ -11,5 +12,6 @@ export {
   TestimonialsSection,
   PromoVideoSection,
   TeamSection,
-  NewsMediaSection
+  NewsMediaSection,
+  ContactSection
 };
