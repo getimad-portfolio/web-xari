@@ -18,7 +18,7 @@ function FooterSection() {
   ];
 
   return (
-    <section className="mx-auto pt-24 max-w-5xl">
+    <section className="mx-auto pt-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
       <div className="relative py-12">
         <hr className="top-0 left-0 absolute x-rule" />
         <hr className="right-0 bottom-0 absolute x-rule" />
