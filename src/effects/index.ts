@@ -1,3 +1,4 @@
 import ScrollEffectContainer from "./ScrollEffectContainer";
+import LightEffect from "./LightEffect/LightEffect";
 
-export { ScrollEffectContainer };
+export { ScrollEffectContainer, LightEffect };
