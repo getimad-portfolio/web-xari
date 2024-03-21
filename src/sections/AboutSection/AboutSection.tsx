@@ -8,6 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ScrollEffectContainer } from "../../effects";
 
 type CardProps = {
   icon: IconDefinition;
@@ -21,20 +22,24 @@ type ParagraphProps = {
 
 function Card({ icon, title }: CardProps) {
   return (
-    <div className="relative flex flex-col justify-center items-center gap-4 bg-primary-ori/10 rounded w-52 h-52">
-      <FontAwesomeIcon icon={icon} className="h-14" />
-      <span className="font-bold">{title}</span>
-      <hr className="top-0 left-0 absolute x-rule" />
-    </div>
+    <ScrollEffectContainer>
+      <div className="relative flex flex-col justify-center items-center gap-4 bg-primary-ori/10 rounded w-52 h-52">
+        <FontAwesomeIcon icon={icon} className="h-14" />
+        <span className="font-bold">{title}</span>
+        <hr className="top-0 left-0 absolute x-rule" />
+      </div>
+    </ScrollEffectContainer>
   );
 }
 
 function Paragraph({ title, children }: ParagraphProps) {
   return (
-    <div>
-      <h3 className="mb-2 font-bold text-2xl">{title}</h3>
-      <p className="text-primary-ori">{children}</p>
-    </div>
+    <ScrollEffectContainer>
+      <div>
+        <h3 className="mb-2 font-bold text-2xl">{title}</h3>
+        <p className="text-primary-ori">{children}</p>
+      </div>
+    </ScrollEffectContainer>
   );
 }
 
@@ -44,24 +49,26 @@ function AboutSection() {
       className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl"
       id="about"
     >
-      <article className="flex flex-col gap-16 mb-32 text-center">
-        <h2 className="font-bold text-3xl">
-          A one-stop shop for local retailers
-        </h2>
-        <p>
-          Xari is a B2B e-commerce app that allows traditional proximity stores
-          to order any consumer goods they sell and get delivered within a few
-          hours. Xari also provides different types of financial services to
-          their B2B customers thanks to a payment institution license obtained
-          from the Central Bank of Morocco.
-        </p>
-        <div className="flex md:flex-row flex-col justify-between items-center gap-6">
-          <Card icon={faGlobe} title="7 Countries" />
-          <Card icon={faUser} title="+300 Employees" />
-          <Card icon={faCube} title="+3 000 Products" />
-          <Card icon={faUser} title="+100 000 Clients" />
-        </div>
-      </article>
+      <ScrollEffectContainer>
+        <article className="flex flex-col gap-16 mb-32 text-center">
+          <h2 className="font-bold text-3xl">
+            A one-stop shop for local retailers
+          </h2>
+          <p>
+            Xari is a B2B e-commerce app that allows traditional proximity
+            stores to order any consumer goods they sell and get delivered
+            within a few hours. Xari also provides different types of financial
+            services to their B2B customers thanks to a payment institution
+            license obtained from the Central Bank of Morocco.
+          </p>
+          <div className="flex md:flex-row flex-col justify-between items-center gap-6">
+            <Card icon={faGlobe} title="7 Countries" />
+            <Card icon={faUser} title="+300 Employees" />
+            <Card icon={faCube} title="+3 000 Products" />
+            <Card icon={faUser} title="+100 000 Clients" />
+          </div>
+        </article>
+      </ScrollEffectContainer>
       <article className="relative flex md:flex-row flex-col justify-between gap-12">
         <div className="flex flex-col gap-9 mx-auto max-w-[500px] text-center md:text-left">
           <Paragraph title="A digital distribution channel">

@@ -7,6 +7,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ScrollEffectContainer } from "../../effects";
 
 function FooterSection() {
   const links: { icon: IconDefinition; href: string }[] = [
@@ -18,38 +19,40 @@ function FooterSection() {
   ];
 
   return (
-    <section className="mx-auto pt-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
-      <div className="relative py-12">
-        <hr className="top-0 left-0 absolute x-rule" />
-        <hr className="right-0 bottom-0 absolute x-rule" />
-        <nav>
-          <h3 className="mb-6 font-bold text-3xl text-center">
-            Follow us on our social networks
-          </h3>
-          <ul className="flex justify-center">
-            {links.map((link, index) => (
-              <li key={index} className="inline-block mx-4">
-                <a href={link.href} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon
-                    icon={link.icon}
-                    size="2x"
-                    className="text-primary-ori hover:text-white hover:scale-110 transition-all duration-300"
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-      <a className="place-items-center grid my-7" href="https://getimad.me">
-        <span className="font-bold text-primary-ori text-xs tracking-wider">
-          Designed & Built by getimad.me
-        </span>
-        <span className="text-xs tracking-wider">
-          &copy; 2024 All rights reserved
-        </span>
-      </a>
-    </section>
+    <ScrollEffectContainer>
+      <section className="mx-auto pt-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
+        <div className="relative py-12">
+          <hr className="top-0 left-0 absolute x-rule" />
+          <hr className="right-0 bottom-0 absolute x-rule" />
+          <nav>
+            <h3 className="mb-6 font-bold text-3xl text-center">
+              Follow us on our social networks
+            </h3>
+            <ul className="flex justify-center">
+              {links.map((link, index) => (
+                <li key={index} className="inline-block mx-4">
+                  <a href={link.href} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon
+                      icon={link.icon}
+                      size="2x"
+                      className="text-primary-ori hover:text-white hover:scale-110 transition-all duration-300"
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+        <a className="place-items-center grid my-7" href="https://getimad.me">
+          <span className="font-bold text-primary-ori text-xs tracking-wider">
+            Designed & Built by getimad.me
+          </span>
+          <span className="text-xs tracking-wider">
+            &copy; 2024 All rights reserved
+          </span>
+        </a>
+      </section>
+    </ScrollEffectContainer>
   );
 }
 

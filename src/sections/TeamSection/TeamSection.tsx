@@ -1,5 +1,6 @@
 import { faLink, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ScrollEffectContainer } from "../../effects";
 
 type CardProps = {
   name: string;
@@ -8,24 +9,26 @@ type CardProps = {
 
 function CardTeamSection({ name, role }: CardProps) {
   return (
-    <div className="relative place-items-center grid bg-primary-ori/10 rounded h-64">
-      <div className="text-center">
-        <div>
-          <FontAwesomeIcon icon={faUser} className="w-20 h-20" />
+    <ScrollEffectContainer>
+      <div className="relative place-items-center grid bg-primary-ori/10 rounded h-64">
+        <div className="text-center">
+          <div>
+            <FontAwesomeIcon icon={faUser} className="w-20 h-20" />
+          </div>
+          <div>
+            <h4 className="font-bold text-2xl text-primary-ori">{name}</h4>
+            <span className="font-bold">{role}</span>
+          </div>
+          <a href="#">
+            <FontAwesomeIcon
+              icon={faLink}
+              className="top-2 right-2 absolute w-6 h-6 text-primary-ori/50 hover:text-primary-ori transition-all duration-300 cursor-pointer ease-in-out"
+            />
+          </a>
+          <hr className="top-0 left-0 absolute x-rule" />
         </div>
-        <div>
-          <h4 className="font-bold text-2xl text-primary-ori">{name}</h4>
-          <span className="font-bold">{role}</span>
-        </div>
-        <a href="#">
-          <FontAwesomeIcon
-            icon={faLink}
-            className="top-2 right-2 absolute w-6 h-6 text-primary-ori/50 hover:text-primary-ori transition-all duration-300 cursor-pointer ease-in-out"
-          />
-        </a>
-        <hr className="top-0 left-0 absolute x-rule" />
       </div>
-    </div>
+    </ScrollEffectContainer>
   );
 }
 
