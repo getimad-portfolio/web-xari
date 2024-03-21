@@ -20,7 +20,10 @@ function NewsMediaSection() {
   ];
 
   return (
-    <section className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
+    <section
+      className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl"
+      id="news"
+    >
       <div className="flex flex-col gap-12 bg-primary-ori/10 p-16 rounded-xl">
         <div className="text-center">
           <h2 className="mb-4 font-bold text-3xl">News & Media</h2>

@@ -2,7 +2,10 @@ import ContactForm from "./ContactForm";
 
 function ContactSection() {
   return (
-    <section className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
+    <section
+      className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl"
+      id="contact"
+    >
       <div className="flex md:flex-row flex-col gap-12">
         <div className="md:w-2/3">
           <h2 className="mb-3 font-bold text-5xl">Contact</h2>

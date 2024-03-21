@@ -40,7 +40,10 @@ function Paragraph({ title, children }: ParagraphProps) {
 
 function AboutSection() {
   return (
-    <section className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
+    <section
+      className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl"
+      id="about"
+    >
       <article className="flex flex-col gap-16 mb-32 text-center">
         <h2 className="font-bold text-3xl">
           A one-stop shop for local retailers

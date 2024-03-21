@@ -16,7 +16,7 @@ import "./TestimonialsSection.css";
 
 function TestimonialsSection() {
   return (
-    <section className="mx-auto py-24 max-w-5xl">
+    <section className="mx-auto py-24 max-w-5xl" id="testimonials">
       <div className="flex flex-col items-center gap-12">
         <div className="text-center">
           <h2 className="mb-6 font-bold text-4xl">Testimonials</h2>

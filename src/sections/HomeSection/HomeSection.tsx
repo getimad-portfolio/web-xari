@@ -6,7 +6,10 @@ import { faApple, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function HomeSection() {
   return (
-    <section className="mx-auto w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl md:h-screen">
+    <section
+      className="mx-auto w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl md:h-screen"
+      id="home"
+    >
       <div className="relative flex md:flex-row flex-col items-center gap-24 pt-24 md:pt-0 h-full">
         <div className="max-w-[700px]">
           <p className="mb-12 font-bold text-5xl">

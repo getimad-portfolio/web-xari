@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   @apply bg-[#250F00] text-white;
