@@ -40,7 +40,7 @@ function Paragraph({ title, children }: ParagraphProps) {
 
 function AboutSection() {
   return (
-    <section className="mx-auto py-24 max-w-5xl">
+    <section className="mx-auto py-24 w-10/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
       <article className="flex flex-col gap-16 mb-32 text-center">
         <h2 className="font-bold text-3xl">
           A one-stop shop for local retailers
@@ -52,15 +52,15 @@ function AboutSection() {
           their B2B customers thanks to a payment institution license obtained
           from the Central Bank of Morocco.
         </p>
-        <div className="flex flex-row justify-between gap-12">
+        <div className="flex md:flex-row flex-col justify-between items-center gap-6">
           <Card icon={faGlobe} title="7 Countries" />
           <Card icon={faUser} title="+300 Employees" />
           <Card icon={faCube} title="+3 000 Products" />
           <Card icon={faUser} title="+100 000 Clients" />
         </div>
       </article>
-      <article className="relative flex flex-row justify-between">
-        <div className="flex flex-col gap-9 max-w-[500px]">
+      <article className="relative flex md:flex-row flex-col justify-between gap-12">
+        <div className="flex flex-col gap-9 mx-auto max-w-[500px] text-center md:text-left">
           <Paragraph title="A digital distribution channel">
             Xari's app allows retailers to order a wide range of consumer goods
             at competitive prices while benefiting from quick delivery.
@@ -75,7 +75,7 @@ function AboutSection() {
           </Paragraph>
         </div>
         <div>
-          <img className="w-80" src={img2} alt="" />
+          <img className="mx-auto w-80" src={img2} alt="" />
         </div>
         <hr className="right-0 bottom-0 absolute x-rule" />
       </article>
