@@ -12,15 +12,24 @@ type FormInput = {
   message: string;
 };
 
-function ContactForm() {
+type ContactFormProps = {
+  setIsSubmitted: (isSubmitted: boolean) => void;
+};
+
+function ContactForm({ setIsSubmitted }: ContactFormProps) {
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<FormInput>();
 
-  const onSubmit: SubmitHandler<FormInput> = (data) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormInput> = () => {
+    setIsSubmitted(true);
+
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => (input.value = ""));
+    const textarea = document.querySelector("textarea");
+    if (textarea) textarea.value = "";
   };
 
   return (
