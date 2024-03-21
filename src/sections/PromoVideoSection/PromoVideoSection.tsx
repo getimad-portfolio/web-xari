@@ -27,10 +27,11 @@ function PromoVideoSection() {
                 className="top-1/2 right-1/2 z-10 absolute -translate-y-1/2 translate-x-1/2"
                 width="1024"
                 height="576"
-                src="https://www.youtube.com/embed/lAd3LYIZMjs?si=zrLporM7oz6mWB31"
+                src="https://www.youtube.com/embed/_f2h9MT89-8?si=miIsfGps71Kcq4Pa"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
+
               <div
                 className="bg-primary-ori/10 backdrop-blur-md w-screen h-screen"
                 onClick={() => setShowVideo(false)}
