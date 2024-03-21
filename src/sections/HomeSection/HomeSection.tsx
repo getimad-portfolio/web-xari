@@ -6,8 +6,8 @@ import { faApple, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function HomeSection() {
   return (
-    <section className="mx-auto max-w-5xl h-screen">
-      <div className="relative flex flex-row items-center gap-12 h-full">
+    <section className="mx-auto w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl md:h-screen">
+      <div className="relative flex md:flex-row flex-col items-center gap-24 pt-24 md:pt-0 h-full">
         <div className="max-w-[700px]">
           <p className="mb-12 font-bold text-5xl">
             <span className="text-7xl text-primary-ori">X</span>ari puts the
@@ -25,7 +25,7 @@ function HomeSection() {
             </a>
           </div>
         </div>
-        <div className="right-0 bottom-0 absolute">
+        <div className="md:right-0 md:bottom-0 md:absolute">
           <img className="w-80" src={img1} alt="" />
         </div>
         <hr className="bottom-0 absolute x-rule" />
