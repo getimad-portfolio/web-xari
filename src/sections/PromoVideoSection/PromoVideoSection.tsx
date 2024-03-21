@@ -6,12 +6,12 @@ function PromoVideoSection() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section className="mx-auto py-24 max-w-5xl">
+    <section className="mx-auto py-24 w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
       <div className="">
         <h2 className="mb-12 font-bold text-3xl text-center">
           Discover our promotional video
         </h2>
-        <div className="place-items-center grid bg-primary-ori/10 rounded-xl w-full h-screen">
+        <div className="place-items-center grid bg-primary-ori/10 rounded-xl w-full h-[500px]">
           <button className="mx-auto" onClick={() => setShowVideo(true)}>
             <FontAwesomeIcon
               icon={faPlay}
