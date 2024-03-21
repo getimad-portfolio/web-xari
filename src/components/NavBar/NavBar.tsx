@@ -2,6 +2,14 @@ import "./NavBar.css";
 import GetimadLogo from "../GetimadLogo";
 
 function NavBar() {
+  const links: { label: string; href: string }[] = [
+    { label: "Home", href: "#home" },
+    { label: "About Us", href: "#about" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "News & Media", href: "#news" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
     <nav className="top-0 z-40 fixed backdrop-blur-md w-full">
       <div className="mx-auto max-w-5xl">
@@ -15,31 +23,13 @@ function NavBar() {
             <div className="logo-underline"></div>
           </a>
           <ul className="flex flex-row gap-10">
-            <li>
-              <a className="nav-link" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#about">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#testimonials">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#news">
-                News & Media
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
+            {links.map((link) => (
+              <li key={link.label}>
+                <a className="nav-link" href={link.href}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
