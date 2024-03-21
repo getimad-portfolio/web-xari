@@ -40,10 +40,10 @@ function TeamSection() {
   ];
 
   return (
-    <section className="mx-auto py-24 max-w-5xl">
+    <section className="mx-auto py-24 w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
       <div>
         <h3 className="mb-12 font-bold text-3xl text-center">Xari's Team</h3>
-        <div className="gap-12 grid grid-cols-3 grid-rows-2">
+        <div className="gap-6 md:gap-12 grid grid-cols-2 md:grid-cols-3 grid-rows-2">
           {team.map((member, index) => (
             <CardTeamSection
               key={index}
