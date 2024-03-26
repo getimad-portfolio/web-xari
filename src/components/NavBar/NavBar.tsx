@@ -1,5 +1,4 @@
 import "./NavBar.css";
-import GetimadLogo from "../GetimadLogo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose, faNavicon } from "@fortawesome/free-solid-svg-icons";
 
