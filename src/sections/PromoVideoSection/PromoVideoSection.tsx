@@ -24,9 +24,7 @@ function PromoVideoSection() {
           {showVideo && (
             <div className="top-0 left-0 z-50 fixed">
               <iframe
-                className="top-1/2 right-1/2 z-10 absolute -translate-y-1/2 translate-x-1/2"
-                width="1024"
-                height="576"
+                className="top-1/2 right-1/2 z-10 absolute w-11/12 md:w-10/12 h-1/2 md:h-5/6 -translate-y-1/2 translate-x-1/2"
                 src="https://www.youtube.com/embed/tJvDXKU0vNk?si=IcTHkiiBJsButW9F"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
