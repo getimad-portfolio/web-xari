@@ -87,11 +87,11 @@ function ContactForm({ setIsSubmitted }: ContactFormProps) {
       </div>
       <div className="flex flex-row justify-between h-12">
         <a
-          href="mailto:fake@contact-us.com"
+          href="mailto:contact-us@***.com"
           className="flex flex-row items-center gap-3 font-bold text-primary-ori"
         >
           <FontAwesomeIcon icon={faEnvelope} />
-          fake@contact-us.com
+          contact-us@***.com
         </a>
         <button
           className="flex flex-row justify-center items-center hover:border-primary-ori bg-primary-ori/10 border border-transparent rounded-md w-48 font-bold transition-colors duration-300"
