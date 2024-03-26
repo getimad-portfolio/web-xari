@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -22,8 +21,8 @@ header {
 }
 
 ::selection {
-  background-color: #FDAF7B;
-  color: #3E1900;
+  background-color: #fdaf7b;
+  color: #3e1900;
 }
 
 /* Scrollbar Style */
