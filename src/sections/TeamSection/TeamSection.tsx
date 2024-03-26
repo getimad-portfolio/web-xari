@@ -34,12 +34,12 @@ function CardTeamSection({ name, role }: CardProps) {
 
 function TeamSection() {
   const team: { name: string; role: string }[] = [
-    { name: "Imad Ez-zahi", role: "CEO" },
-    { name: "Amal Ez-zahi", role: "COO" },
-    { name: "John Smeth", role: "CSO" },
-    { name: "Odd Rgr", role: "CTO" },
-    { name: "Even Zhr", role: "CFO" },
-    { name: "Adam Tech", role: "CTO" },
+    { name: "John Doe", role: "Software Engineer" },
+    { name: "Jane Smith", role: "Product Manager" },
+    { name: "Robert Johnson", role: "UX Designer" },
+    { name: "Emily Davis", role: "Data Scientist" },
+    { name: "Michael Brown", role: "DevOps Engineer" },
+    { name: "Sarah Wilson", role: "QA Engineer" },
   ];
 
   return (
