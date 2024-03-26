@@ -1,5 +1,5 @@
 .light {
-  @apply md:-top-2/3 -top-3/4 -left-24 md:left-0 z-50 fixed bg-white blur-3xl w-36 h-[500px] animate-pulse -rotate-45;
+  @apply md:-top-2/3 -top-3/4 -left-44 md:-left-16 z-50 fixed bg-white blur-3xl w-36 h-[500px] animate-pulse -rotate-45;
 
   animation: pulse 10s infinite;
 }

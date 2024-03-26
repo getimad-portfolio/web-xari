@@ -26,13 +26,8 @@ function NavBar() {
       <nav className="top-0 z-40 fixed backdrop-blur-md w-full">
         <div className="mx-auto w-11/12 md:w-10/12 2xl:w-4/5 max-w-7xl">
           <div className="flex flex-row justify-between items-center h-16">
-            <a
-              className="relative flex items-center gap-2"
-              href="https://getimad.me/"
-            >
-              <GetimadLogo className="h-8" color="white" />
-              <span className="logo-text">getimad.me</span>
-              <div className="logo-underline"></div>
+            <a className="font-bold text-xl" href="/">
+              <span className="text-3xl text-primary-ori">X</span>ari
             </a>
             <ul className="md:flex flex-row gap-10 hidden">
               {links.map((link) => (
