@@ -1,19 +1,26 @@
-import { faLink, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ScrollEffectContainer } from "../../effects";
+import Man1 from "../../assets/images/people/man-1.webp";
+import Man2 from "../../assets/images/people/man-2.webp";
+import Man3 from "../../assets/images/people/man-3.webp";
+import Woman1 from "../../assets/images/people/woman-1.webp";
+import Woman2 from "../../assets/images/people/woman-2.webp";
+import Woman3 from "../../assets/images/people/woman-3.webp";
 
 type CardProps = {
   name: string;
   role: string;
+  img: string;
 };
 
-function CardTeamSection({ name, role }: CardProps) {
+function CardTeamSection({ name, role, img }: CardProps) {
   return (
     <ScrollEffectContainer>
       <div className="relative place-items-center grid rounded h-64">
         <div className="text-center">
-          <div>
-            <FontAwesomeIcon icon={faUser} className="w-20 h-20" />
+          <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-2">
+            <img className="w-full h-full" src={img} alt="" />
           </div>
           <div>
             <h4 className="font-bold text-2xl text-primary-ori dark:text-dark-primary-ori">
@@ -34,13 +41,13 @@ function CardTeamSection({ name, role }: CardProps) {
 }
 
 function TeamSection() {
-  const team: { name: string; role: string }[] = [
-    { name: "John Doe", role: "Software Engineer" },
-    { name: "Jane Smith", role: "Product Manager" },
-    { name: "Robert Johnson", role: "UX Designer" },
-    { name: "Emily Davis", role: "Data Scientist" },
-    { name: "Michael Brown", role: "DevOps Engineer" },
-    { name: "Sarah Wilson", role: "QA Engineer" },
+  const team: { name: string; role: string; img: string }[] = [
+    { name: "John Doe", role: "Software Engineer", img: Man2 },
+    { name: "Jane Smith", role: "Product Manager", img: Woman1 },
+    { name: "Robert Johnson", role: "UX Designer", img: Man1 },
+    { name: "Emily Davis", role: "Data Scientist", img: Woman2 },
+    { name: "Michael Brown", role: "DevOps Engineer", img: Man3 },
+    { name: "Sarah Wilson", role: "QA Engineer", img: Woman3 },
   ];
 
   return (
@@ -53,6 +60,7 @@ function TeamSection() {
               key={index}
               name={member.name}
               role={member.role}
+              img={member.img}
             />
           ))}
         </div>
