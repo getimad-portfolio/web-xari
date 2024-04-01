@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { ScrollEffectContainer } from "../../effects";
+import VThumbnail from "../../assets/images/v-thumbnail.webp";
 
 function PromoVideoSection() {
   const [showVideo, setShowVideo] = useState(false);
@@ -13,11 +14,12 @@ function PromoVideoSection() {
           <h2 className="mb-12 font-bold text-3xl text-center">
             Discover our promotional video
           </h2>
-          <div className="place-items-center grid bg-primary-ori/10 dark:bg-primary-ori/50 rounded-xl w-full h-[500px]">
+          <div className="place-items-center grid bg-primary-ori/10 dark:bg-primary-ori/50 rounded-xl w-full h-[500px] relative overflow-hidden">
+            <img className="absolute w-full sepia" src={VThumbnail} alt="" />
             <button className="mx-auto" onClick={() => setShowVideo(true)}>
               <FontAwesomeIcon
                 icon={faPlay}
-                className="opacity-50 hover:opacity-100 w-24 h-24 text-primary-ori dark:text-dark-primary-ori transition duration-300 ease-in-out"
+                className="opacity-50 hover:opacity-100 w-24 h-24 text-primary-ori dark:text-dark-primary-ori transition duration-300 ease-in-out z-10 relative"
               />
             </button>
           </div>
