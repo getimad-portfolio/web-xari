@@ -10,22 +10,23 @@ type CardProps = {
 function CardTeamSection({ name, role }: CardProps) {
   return (
     <ScrollEffectContainer>
-      <div className="relative place-items-center grid bg-primary-ori/10 rounded h-64">
+      <div className="relative place-items-center grid rounded h-64">
         <div className="text-center">
           <div>
             <FontAwesomeIcon icon={faUser} className="w-20 h-20" />
           </div>
           <div>
-            <h4 className="font-bold text-2xl text-primary-ori">{name}</h4>
+            <h4 className="font-bold text-2xl text-primary-ori dark:text-dark-primary-ori">
+              {name}
+            </h4>
             <span className="font-bold">{role}</span>
           </div>
           <a href="#">
             <FontAwesomeIcon
               icon={faLink}
-              className="top-2 right-2 absolute w-6 h-6 text-primary-ori/50 hover:text-primary-ori transition-all duration-300 cursor-pointer ease-in-out"
+              className="bottom-3 right-1/2 translate-x-1/2 absolute w-6 h-6 text-primary-ori/50 dark:text-dark-primary-ori/50 hover:text-primary-ori dark:hover:text-dark-primary-ori transition-all duration-300 cursor-pointer ease-in-out"
             />
           </a>
-          <hr className="top-0 left-0 absolute x-rule" />
         </div>
       </div>
     </ScrollEffectContainer>

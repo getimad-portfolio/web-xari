@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import img2 from "../../assets/images/img-2.png";
+import img2 from "../../assets/images/img-2-white.webp";
 
 import {
   IconDefinition,
@@ -23,7 +23,7 @@ type ParagraphProps = {
 function Card({ icon, title }: CardProps) {
   return (
     <ScrollEffectContainer>
-      <div className="relative flex flex-col justify-center items-center gap-4 bg-primary-ori/10 rounded w-52 h-52">
+      <div className="relative flex flex-col justify-center items-center gap-4 bg-primary-ori/10 dark:bg-dark-primary-ori/10 rounded w-52 h-52">
         <FontAwesomeIcon icon={icon} className="h-14" />
         <span className="font-bold">{title}</span>
         <hr className="top-0 left-0 absolute x-rule" />
@@ -37,7 +37,9 @@ function Paragraph({ title, children }: ParagraphProps) {
     <ScrollEffectContainer>
       <div>
         <h3 className="mb-2 font-bold text-2xl">{title}</h3>
-        <p className="text-primary-ori">{children}</p>
+        <p className="text-primary-ori dark:text-dark-primary-ori">
+          {children}
+        </p>
       </div>
     </ScrollEffectContainer>
   );

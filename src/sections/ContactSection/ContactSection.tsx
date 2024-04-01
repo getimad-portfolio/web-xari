@@ -14,7 +14,7 @@ function ContactSection() {
         <div className="flex md:flex-row flex-col gap-12">
           <div className="md:w-2/3">
             <h2 className="mb-3 font-bold text-5xl">Contact</h2>
-            <p className="mb-3 font-bold text-3xl text-primary-ori">
+            <p className="mb-3 font-bold text-3xl text-primary-ori dark:text-dark-primary-ori">
               Send us a message!
             </p>
             {isSubmitted && (

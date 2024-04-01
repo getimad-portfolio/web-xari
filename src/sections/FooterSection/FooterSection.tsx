@@ -35,7 +35,7 @@ function FooterSection() {
                     <FontAwesomeIcon
                       icon={link.icon}
                       size="2x"
-                      className="text-primary-ori hover:text-white hover:scale-110 transition-all duration-300"
+                      className="text-primary-ori dark:text-dark-primary-ori hover:text-secondary-ori dark:hover:text-dark-secondary-ori hover:scale-110 transition-all duration-300"
                     />
                   </a>
                 </li>
@@ -44,7 +44,7 @@ function FooterSection() {
           </nav>
         </div>
         <a className="place-items-center grid my-7" href="https://getimad.me">
-          <span className="font-bold text-primary-ori text-xs tracking-wider">
+          <span className="font-bold text-primary-ori dark:text-dark-primary-ori text-xs tracking-wider">
             Designed & Built by getimad.me
           </span>
           <span className="text-xs tracking-wider">

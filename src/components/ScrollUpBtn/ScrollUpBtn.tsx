@@ -28,7 +28,7 @@ function ScrollUpBtn() {
     <AnimatePresence>
       {showScrollUpBtn && (
         <motion.button
-          className="right-5 bottom-5 fixed place-items-center grid bg-white/10 rounded-full w-10 h-10"
+          className="right-5 bottom-5 fixed place-items-center grid bg-secondary-ori/10 dark:bg-dark-primary-ori/50 rounded-full w-10 h-10"
           onClick={handleScrollUp}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}

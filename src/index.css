@@ -9,20 +9,19 @@ html {
 }
 
 body {
-  @apply bg-[#250F00] text-white;
+  @apply bg-dark-secondary-ori text-secondary-ori dark:text-dark-secondary-ori dark:bg-white;
 }
 
 header {
-  @apply bg-gradient-to-b from-[#3E1900] to-[#250F00];
+  @apply bg-gradient-to-b from-[#3E1900] to-[#250F00] dark:to-white dark:from-[#fff7f1];
 }
 
 .x-rule {
-  @apply border-0 bg-gradient-to-r from-transparent via-primary-ori to-transparent w-full h-px;
+  @apply border-0 bg-gradient-to-r from-transparent via-primary-ori dark:via-dark-primary-ori to-transparent w-full h-px;
 }
 
 ::selection {
-  background-color: #fdaf7b;
-  color: #3e1900;
+  @apply bg-primary-ori text-dark-primary-ori dark:bg-dark-primary-ori dark:text-white;
 }
 
 /* Scrollbar Style */
@@ -35,6 +34,5 @@ header {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  @apply bg-primary-ori rounded-full;
 }

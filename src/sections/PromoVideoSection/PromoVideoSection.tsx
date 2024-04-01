@@ -13,11 +13,11 @@ function PromoVideoSection() {
           <h2 className="mb-12 font-bold text-3xl text-center">
             Discover our promotional video
           </h2>
-          <div className="place-items-center grid bg-primary-ori/10 rounded-xl w-full h-[500px]">
+          <div className="place-items-center grid bg-primary-ori/10 dark:bg-primary-ori/50 rounded-xl w-full h-[500px]">
             <button className="mx-auto" onClick={() => setShowVideo(true)}>
               <FontAwesomeIcon
                 icon={faPlay}
-                className="opacity-50 hover:opacity-100 w-24 h-24 text-primary-ori transition duration-300 ease-in-out"
+                className="opacity-50 hover:opacity-100 w-24 h-24 text-primary-ori dark:text-dark-primary-ori transition duration-300 ease-in-out"
               />
             </button>
           </div>
@@ -31,7 +31,7 @@ function PromoVideoSection() {
               ></iframe>
 
               <div
-                className="bg-primary-ori/10 backdrop-blur-md w-screen h-screen"
+                className="bg-primary-ori/10 dark:bg-dark-primary-ori/10 backdrop-blur-md w-screen h-screen"
                 onClick={() => setShowVideo(false)}
               ></div>
             </div>

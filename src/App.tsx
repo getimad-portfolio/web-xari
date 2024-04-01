@@ -10,7 +10,6 @@ import {
 } from "./sections";
 import { NavBar, ScrollUpBtn } from "./components";
 import "./index.css";
-import { LightEffect } from "./effects";
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
         <FooterSection />
       </main>
       <ScrollUpBtn />
-      <LightEffect />
     </>
   );
 }

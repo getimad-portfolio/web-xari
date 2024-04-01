@@ -22,7 +22,7 @@ function TestimonialsSection() {
         <div className="flex flex-col items-center gap-12">
           <div className="text-center">
             <h2 className="mb-6 font-bold text-4xl">Testimonials</h2>
-            <p className="text-primary-ori text-xl">
+            <p className="text-primary-ori dark:text-dark-primary-ori text-xl">
               What people are saying about us...
             </p>
           </div>
