@@ -1,21 +1,27 @@
 import NewsMediaCard from "./NewsMediaCard";
+import ImgLocation from "../../assets/images/posts/img-location.webp";
+import ImgPartnership from "../../assets/images/posts/img-partnership.webp";
+import imgProduct from "../../assets/images/posts/img-product.webp";
 
 function NewsMediaSection() {
-  const newsAndMedia: { title: string; description: string }[] = [
+  const newsAndMedia: { title: string; description: string; img: string }[] = [
     {
       title: "New Product Launch",
       description:
         "We are excited to announce the launch of our new product. This product will help you achieve your goals.",
+      img: imgProduct,
     },
     {
       title: "New Office Location",
       description:
         "We are excited to announce the launch of our new office location. This office will help you achieve your goals.",
+      img: ImgLocation,
     },
     {
       title: "New Partnership",
       description:
         "We are excited to announce the launch of our new partnership. This partnership will help you achieve your goals.",
+      img: ImgPartnership,
     },
   ];
 
@@ -37,6 +43,7 @@ function NewsMediaSection() {
               key={index}
               title={news.title}
               description={news.description}
+              img={news.img}
             />
           ))}
         </div>

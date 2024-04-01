@@ -1,25 +1,22 @@
 import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
-import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ScrollEffectContainer } from "../../effects";
 
 type NewsMediaCardProps = {
   title: string;
   description: string;
+  img: string;
 };
 
-function NewsMediaCard({ title, description }: NewsMediaCardProps) {
+function NewsMediaCard({ title, description, img }: NewsMediaCardProps) {
   return (
     <ScrollEffectContainer>
       <a
         className="flex flex-col justify-center items-center gap-3 text-center cursor-pointer group"
         href="#"
       >
-        <div>
-          <FontAwesomeIcon
-            icon={faNewspaper}
-            className="group-hover:scale-105 w-20 h-20 transition duration-300 scale-100"
-          />
+        <div className="w-56 h-56 rounded-md overflow-hidden group-hover:scale-105 transition duration-300 scale-100">
+          <img src={img} alt={title} />
         </div>
         <h3 className="font-bold text-2xl">{title}</h3>
         <p className="text-primary-ori dark:text-dark-primary-ori">
