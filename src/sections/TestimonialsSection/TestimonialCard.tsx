@@ -1,4 +1,4 @@
-import { faStar, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Review } from "../../interfaces";
 
@@ -9,11 +9,8 @@ type Props = {
 function TestimonialCard({ review }: Props) {
   return (
     <div className="relative flex md:flex-row flex-col items-center gap-10 bg-primary-ori/10 dark:bg-dark-primary-ori/10 p-12 rounded-md">
-      <div className="place-items-center grid w-64">
-        <FontAwesomeIcon
-          icon={faUser}
-          className="w-28 h-28 text-primary-ori dark:text-dark-primary-ori"
-        />
+      <div className="place-items-center grid w-64 rounded-full overflow-hidden">
+        <img src={review.img} alt={review.name} />
       </div>
       <div className="flex flex-col items-center md:items-start gap-3 text-center md:text-left">
         <h3 className="font-bold text-3xl text-primary-ori dark:text-dark-primary-ori">
