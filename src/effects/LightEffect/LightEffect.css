@@ -1,5 +1,0 @@
-.light {
-  @apply -top-20 left-1/2 -translate-x-1/2 z-50 fixed bg-white blur-3xl w-36 h-24 animate-pulse -rotate-45;
-
-  animation: pulse 10s infinite;
-}
