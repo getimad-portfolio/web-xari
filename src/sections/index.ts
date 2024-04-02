@@ -7,7 +7,7 @@ import PromoVideoSection from "./PromoVideoSection/PromoVideoSection";
 import TeamSection from "./TeamSection/TeamSection";
 import TestimonialsSection from "./TestimonialsSection/TestimonialsSection";
 
-export { 
+export {
   HomeSection,
   AboutSection,
   TestimonialsSection,
@@ -15,5 +15,5 @@ export {
   TeamSection,
   NewsMediaSection,
   ContactSection,
-  FooterSection
+  FooterSection,
 };

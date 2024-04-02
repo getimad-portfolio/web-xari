@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 function ThemeToggleBtn() {
   const [theme, setTheme] = useState<"dark" | "light">(
-    localStorage.theme || "light"
+    localStorage.theme || "light",
   );
 
   useEffect(() => {
