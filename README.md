@@ -1,30 +1,95 @@
-# React + TypeScript + Vite
+# Web Xari
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web Xari is a modern React + TypeScript landing page designed for a business, studio, or brand. The project is built with Vite and includes a modern, responsive UI with multiple sections such as the hero area, about section, testimonials, team showcase, press/media highlights, and contact details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive landing page layout
+- Clean and modern visual design
+- Multi-section marketing website structure
+- Animated UI elements with Framer Motion
+- Swiper-based carousel sections
+- Contact form area and brand-focused content blocks
+- Font Awesome icon integration
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- React Hook Form
+- Font Awesome
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Install dependencies:
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Run the project in development mode:
+
+```bash
+npm run dev
+```
+
+Build the app for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+Run lint checks:
+
+```bash
+npm run lint
+```
+
+Format code with Prettier:
+
+```bash
+npm run pretty
+```
+
+## Project Layout
+
+```bash
+src/
+├── components/
+├── sections/
+├── App.tsx
+├── main.tsx
+├── index.css
+└── data/
+```
+
+## Main Sections
+
+The website includes the following major sections:
+
+- Home
+- About
+- Testimonials
+- Promo Video
+- Team
+- News / Media
+- Contact
+- Footer
+
+## Notes
+
+This project is structured as a reusable landing-page application with modular sections and a clean front-end architecture intended for client-facing branding and marketing content.
+
+## License
+
+This project is intended for private or client-specific use.
