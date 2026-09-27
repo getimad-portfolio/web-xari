@@ -92,4 +92,4 @@ This project is structured as a reusable landing-page application with modular s
 
 ## License
 
-This project is intended for private or client-specific use.
+This project is open source and licensed under the MIT License. Anyone can use, modify, and distribute it in accordance with the terms of that license.
